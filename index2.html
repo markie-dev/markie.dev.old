@@ -33,7 +33,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     -->
   </head>
-  <body class="apple-background" style="height:2000px">
+  <body class="apple-background" style="height:5000px">
     <div class="container-fluid pt-3 pb-2 mb-0 px-5 apple-fixed text-center">
       <h3 class="text-white">markie.dev/</h3>
     </div>
@@ -72,7 +72,7 @@
         </div>
     </div>
 
-    <div class="container-lg mt-5 pt-5">
+    <div class="container-lg mt-2 pt-5">
         <div class="row">
             <div class="col-md-6 rounded-3">
               <div class="text-white bg-dark map_box_container rounded-3">
@@ -81,11 +81,11 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="h-100 p-3 apple-navbar apple-text rounded-3 shadow">
-                <img src="img/UNT.jpg" class="img-fluid rounded-3 shadow mb-4" alt="Example image" loading="lazy">
+              <div class="h-100 p-4 apple-navbar apple-text rounded-3 shadow text-center">
+                <img src="img/UNT.jpg" class="img-fluid shadow mb-4" alt="Example image" loading="lazy">
                 <p class="lead mb-1">studying computer science at</p>
                 <h2 class="fw-bold text-success mb-3">The University of North Texas</h2>
-                <a class="btn btn-sm btn-success" href="https://computerscience.engineering.unt.edu/sites/default/files/4.Year.Guide.Computer.Science.pdf" role="button">View Courses &raquo;</a>
+                <a class="btn btn-sm btn-success px-3" href="https://computerscience.engineering.unt.edu/sites/default/files/4.Year.Guide.Computer.Science.pdf" role="button">View Courses &raquo;</a>
               </div>
             </div>
           </div>
@@ -98,11 +98,77 @@
         center: [-97.1526, 33.2075], // starting position [lng, lat]
         zoom: 13 // starting zoom
         });
-        map.on('load', function () {
-        map.resize();
-        });
     </script>
     
+    <nav class="navbar navbar-expand-sm sticky-top apple-navbar shadow-none mt-5">
+        <div class="container-md px-5 pt-1 apple-navbar">
+          <h1 class="navbar-brand apple-text">Projects</h1>
+        </div>
+      </nav>
+
+      <div class="container px-4 py-0" id="custom-cards">
+    
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('img/keyFinder.png');"> 
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <a href="https://github.com/markie-dev/keyFinder"><h2 class="mt-5 mb-4 display-6 lh-1 fw-bold text-white">keyFinder - find the key of any song on YouTube</h2></a>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="https://avatars.githubusercontent.com/u/34432591?v=4" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <small>Python</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <img src="img/python.png" class="img-fluid shadow" width="40" height="30" alt="Example image" loading="lazy">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('img/airSim.png');"> 
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <a href="https://github.com/markie-dev/AirportSim"><h2 class="mt-5 mb-4 display-6 lh-1 fw-bold text-white">AirportSim - simulate the effects of pollution on surrounding areas</h2></a>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="https://avatars.githubusercontent.com/u/34432591?v=4" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <small>C++</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <img src="img/c++.png" class="img-fluid shadow" width="40" height="30" alt="Example image" loading="lazy">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('img/airDash.png');"> 
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <a href="https://github.com/markie-dev/AirportDash"><h2 class="mt-5 mb-4 display-6 lh-1 fw-bold text-white">AirportDash - airport database that supports multiple queries</h2></a>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="https://avatars.githubusercontent.com/u/34432591?v=4" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <small>C++</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <img src="img/c++.png" class="img-fluid shadow" width="40" height="30" alt="Example image" loading="lazy">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     </body>
     </html>
     
