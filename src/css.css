@@ -20,14 +20,18 @@
 
 .map_box_container{
     position: relative;
-    height: 40vh !important;
+    height: 425px !important;
     width: 100% !important;
   }
   
     #map {
       position: absolute;
       top: 0;
-      bottom: 0;
+      bottom: 0 !important;
       width: 100%;
       filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+    }
+
+    .link-purple{
+        filter: hue-rotate(39deg) contrast(90%);
     }
