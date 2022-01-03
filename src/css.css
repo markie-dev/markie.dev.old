@@ -33,6 +33,6 @@
     }
 
     .link-purple{
-        filter: hue-rotate(39deg) contrast(90%);
-        -webkit-filter: hue-rotate(39deg) contrast(90%);
+         -webkit-filter: hue-rotate(39deg); 
+         filter: hue-rotate(39deg);
     }
