@@ -33,13 +33,16 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     -->
   </head>
-  <body class="apple-background" style="height:5000px">
+  <body class="apple-background">
     <div class="container-fluid pt-3 pb-2 mb-0 px-5 apple-fixed text-center">
       <h3 class="text-white">markie.dev/</h3>
     </div>
     <nav class="navbar navbar-expand-sm sticky-top apple-navbar shadow">
       <div class="container-md px-5 pt-1 apple-navbar">
         <h1 class="navbar-brand apple-text">Home</h1>
+        <a class="btn btn-md btn-secondary px-2 pt-0 m-0" href="???" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+        </svg></a>
       </div>
     </nav>
     
@@ -97,13 +100,17 @@
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11',
         center: [-97.1526, 33.2075], // starting position [lng, lat]
-        zoom: 13 // starting zoom
+        zoom: 13, // starting zoom
+        interactive: false
         });
     </script>
     
     <nav class="navbar navbar-expand-sm sticky-top apple-navbar shadow-none mt-5">
         <div class="container-md px-5 pt-1 apple-navbar">
           <h1 class="navbar-brand apple-text">Projects</h1>
+          <a class="btn btn-md btn-secondary px-2 pt-0 m-0" href="???" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg></a>
         </div>
       </nav>
 
@@ -111,9 +118,10 @@
     
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
           <div class="col">
+            <a href="https://github.com/markie-dev/keyFinder" class="link-warning">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('img/keyFinder.png');"> 
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <a href="https://github.com/markie-dev/keyFinder" class="link-warning"><h2 class="mt-5 mb-4 display-6 lh-1 fw-bold text-white">keyFinder</a> - find the key of any song on YouTube</h2>
+                <h2 class="mt-5 mb-4 display-6 lh-1 fw-bold text-white">keyFinder - find the key of any song on YouTube</h2></a>
                 <ul class="d-flex list-unstyled mt-auto">
                   <li class="me-auto">
                     <img src="https://avatars.githubusercontent.com/u/34432591?v=4" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
@@ -130,9 +138,10 @@
           </div>
     
           <div class="col">
+            <a href="https://github.com/markie-dev/AirportSim" class="link-primary">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('img/airSim.png');"> 
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <a href="https://github.com/markie-dev/AirportSim" class="link-primary"><h2 class="mt-5 mb-4 display-6 lh-1 fw-bold text-white">AirportSim</a> - simulate the effects of pollution on surrounding areas</h2>
+                <h2 class="mt-5 mb-4 display-6 lh-1 fw-bold text-white">AirportSim - simulate the effects of pollution on surrounding areas</h2></a>
                 <ul class="d-flex list-unstyled mt-auto">
                   <li class="me-auto">
                     <img src="https://avatars.githubusercontent.com/u/34432591?v=4" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
@@ -149,9 +158,10 @@
           </div>
     
           <div class="col">
+            <a href="https://github.com/markie-dev/AirportDash" class="link-primary">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('img/airDash.png');"> 
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <a href="https://github.com/markie-dev/AirportDash" class="link-primary"><h2 class="mt-5 mb-4 display-6 lh-1 fw-bold text-white">AirportDash</a> - airport database that supports multiple queries</h2>
+                <h2 class="mt-5 mb-4 display-6 lh-1 fw-bold text-white">AirportDash - airport database that supports multiple queries</h2></a>
                 <ul class="d-flex list-unstyled mt-auto">
                   <li class="me-auto">
                     <img src="https://avatars.githubusercontent.com/u/34432591?v=4" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
@@ -169,9 +179,10 @@
         </div>
 
           <div class="col">
+            <a href="https://markie-dev.github.io/stellarRedesign/" style="-webkit-filter: hue-rotate(39deg); filter: hue-rotate(39deg)" class="link-primary">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('img/stellarRedesign.png');"> 
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <a href="https://markie-dev.github.io/stellarRedesign/" style="-webkit-filter: hue-rotate(39deg); filter: hue-rotate(39deg);" class="link-primary"><h2 class="mt-5 mb-4 display-6 lh-1 fw-bold text-white">stellarRedesign</a> - Bootstrap real estate website</h2>
+                <h2 class="mt-5 mb-4 display-6 lh-1 fw-bold text-white">stellarRedesign - Bootstrap real estate website</h2></a>
                 <ul class="d-flex list-unstyled mt-auto">
                   <li class="me-auto">
                     <img src="https://avatars.githubusercontent.com/u/34432591?v=4" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
@@ -186,10 +197,127 @@
               </div>
             </div>
           </div>
-
-
       </div>
 
+      <br>
+
+      <nav class="navbar navbar-expand-sm sticky-top apple-navbar shadow-none mt-5">
+        <div class="container-md px-5 pt-1 apple-navbar">
+          <h1 class="navbar-brand apple-text">Skills</h1>
+          <a class="btn btn-md btn-secondary px-2 pt-0 m-0" href="???" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg></a>
+        </div>
+      </nav>
+
+      <div class="container px-4 py-5" id="icon-grid">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-0">
+          <div class="col d-flex align-items-start">
+            <img class="bi text-muted flex-shrink-0 me-3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-plain.svg" width="50em" height="50em"/>
+            <div>
+              <h4 class="fw-bold mb-1 apple-text">C++ / C</h4>
+              <p class="apple-text">Learned through my first two years of university.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img class="bi text-muted flex-shrink-0 me-3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="50em" height="50em"/>
+            <div>
+              <h4 class="fw-bold mb-1 apple-text">Python</h4>
+              <p class="apple-text">Created multiple scripts for personal use.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img class="bi text-muted flex-shrink-0 me-3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="50em" height="50em"/>
+            <div>
+              <h4 class="fw-bold mb-1 apple-text">Git</h4>
+              <p class="apple-text">Been a git user since sophomore year of high school.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img class="bi text-muted flex-shrink-0 me-3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="50em" height="50em"/>
+            <div>
+              <h4 class="fw-bold mb-1 apple-text">Linux</h4>
+              <p class="apple-text">Very experienced with multiple distro's (Ubuntu, Arch, Kali).</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img class="bi text-muted flex-shrink-0 me-3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="50em" height="50em"/>
+            <div>
+              <h4 class="fw-bold mb-1 apple-text">Bootstrap 4/5</h4>
+              <p class="apple-text">Started developing website's with Bootstrap 4.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img class="bi text-muted flex-shrink-0 me-3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" width="50em" height="50em"/>
+            <div>
+              <h4 class="fw-bold mb-1 apple-text">Adobe Suite</h4>
+              <p class="apple-text">Certified in Illustrator and Photoshop. Also <a href="https://www.youtube.com/watch?v=ixFNlZorpl0">experienced with Premiere Pro.</p></a>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img class="bi text-muted flex-shrink-0 me-3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" width="50em" height="50em"/>
+            <div>
+              <h4 class="fw-bold mb-1 apple-text">Swift</h4>
+              <p class="apple-text">Learning SwiftUI in my free time.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img class="bi text-muted flex-shrink-0 me-3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg" width="50em" height="50em"/>
+            <div>
+              <h4 class="fw-bold mb-1 apple-text">Docker</h4>
+              <p class="apple-text">Some experience using Docker containers with my Raspberry Pi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <nav class="navbar navbar-expand-sm sticky-top apple-navbar shadow-none mt-0">
+        <div class="container-md px-5 pt-1 apple-navbar">
+          <h1 class="navbar-brand apple-text">About Me</h1>
+          <a class="btn btn-md btn-secondary px-2 pt-0 m-0" href="???" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg></a>
+        </div>
+      </nav>
+
+      <br><br>
+
+      <div class="container">
+        <div class="mb-5 row mx-0 p-0">
+          <div class="card mb-4 border-dark shadow col-md-4 p-0" style="background-color: rgb(46, 46, 46);">
+          <img src="https://avatars.githubusercontent.com/u/34432591?v=4" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h4 class="card-title text-white">Marcus Ellison</h4>
+            <p class="card-text text-white">Sophomore @ UNT</p>
+            <a class="btn btn-sm btn-primary px-2" href="mailto:markie@markie.dev" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+              <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+            </svg></a>
+
+            <a class="btn btn-sm btn-primary px-2" href="iMessage://markie@markie.dev"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-fill" viewBox="0 0 16 16">
+              <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"/>
+            </svg></a>
+
+            <a class="btn btn-sm btn-primary px-2" href="???" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+            </svg></a>
+          </div>
+        </div>
+        <div class="col-md-8 text-white ps-5">
+          <h1 class="mt-4 mb-5"></h1>
+          <p class="text lead mt-3 pt-0 apple-text"><strong>I'm a Software Engineer specializing in front-end and web development!</strong> <br><br> Currently, I work as a Data Communications Technician at the University of North Texas, 
+            keeping 40 thousand students and staff online throughout the year. Through this position, I've learned to balance full-time school while also maintaining an acceptable GPA. <br><br>Right now, I'm a sophomore at UNT pursuing a Computer Science degree. These 
+            courses have given me a great foundation in C++, while also learning Python and Swift in my spare time. Previously, I created and maintained a website for a Real Estate 
+            company in Central Texas. This is where I gained my passion for full-stack development and started specializing in front-end design. <br><br><strong> I hope to make full-stack development my career and help 
+            change the world!</strong></p>
+        </div>
+      </div>
+      </div>
+
+      <footer class="py-3" style="background-color: rgb(29, 29, 29);">
+        <p class="text-center apple-text">markie.dev © - made with bootstrap 💙</p>
+      </footer>
+      
 
     </body>
     </html>
