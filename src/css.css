@@ -31,8 +31,3 @@
       width: 100%;
       filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
     }
-
-    .link-purple{
-         -webkit-filter: hue-rotate(39deg); 
-         filter: hue-rotate(39deg);
-    }
