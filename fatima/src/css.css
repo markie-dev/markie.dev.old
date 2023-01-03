@@ -1,0 +1,54 @@
+.blur {
+    backdrop-filter: blur(10px);
+}
+
+.apple-fixed{
+    background-color: rgb(0, 0, 0);
+}
+
+.apple-navbar{
+    background-color: #1b1b1b;
+}
+
+.apple-text{
+    color: rgb(170, 170, 170);
+}
+
+.apple-background{
+    background-color: #252525;
+}
+
+.map_box_container{
+    position: relative;
+    height: 425px !important;
+    width: 100% !important;
+  }
+  
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0 !important;
+      width: 100%;
+      filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+    }
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #252525;
+    /* 
+    Stretch the container to fill the entire screen
+    */
+    /*min-height: 100vh;*/
+}
+
+.timeC{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 650;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
