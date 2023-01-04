@@ -18,7 +18,6 @@
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
 <script>(function () {
   const second = 1000,
         minute = second * 60,
@@ -55,11 +54,45 @@
     <div class="container px-5">
       <div id="TimeSince">
         <br>
-          <span class="timeC" id="days"> days</span><span class="timeC"> days</span><br>
-          <span class="timeC" id="hours"> Hours</span><span class="timeC"> hours</span><br>
-          <span class="timeC" id="minutes"> Minutes</span><span class="timeC"> minutes</span><br>
-          <span class="timeC" id="seconds"> Seconds</span><span class="timeC"> seconds</span><br>
+        <br>
+          <span class="timeC" id="days"> days</span><span class="timeL"> days</span>
+          <span class="timeC" id="hours"> Hours</span><span class="timeL"> hours</span>
+          <span class="timeC" id="minutes"> Minutes</span><span class="timeL"> minutes</span>
+          <span class="timeC" id="seconds"> Seconds</span><span class="timeL"> seconds</span>
       </div>
     </div>
+    <br>
+    <br>
+    <nav class="navbar navbar-expand-sm sticky-top apple-navbar shadow">
+      <div class="container-md px-5 pt-1 apple-navbar">
+        <h1 class="navbar-brand apple-text">fit pic button lmfao</h1>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <div class="btndiv">
+      <button type="button" id="fitbtn" class="btn btn-primary">Generate FIT PIC</button>
+    </div>
+    <br>
+    <br>
+    <div class="container px-5">
+      <img id="fitpic" src="fitpics/1.jpeg" alt="fit pic" height="400">
+    </div>
+    <script>
+      // Script to generate random fit pic
+      // When the button with the id of fitbtn is clicked, run the function
+      // The function will generate a random number between 1 and 8
+      // The function will then change the src of the image with the id of fitpic to the image with the corresponding number
+      document.getElementById("fitbtn").addEventListener("click", function() {
+        var random = Math.floor(Math.random() * 8) + 1;
+        //document.getElementById("fitpic").src = "fitpics/" + random + ".jpeg";
+        //if number is 7, change to img tag to a video tag with a height of 400
+        if (random == 7) {
+          document.getElementById("fitpic").outerHTML = '<video id="fitpic" src="fitpics/7.mov" alt="fit pic" height="400" autoplay loop></video>';
+        } else {
+          document.getElementById("fitpic").outerHTML = '<img id="fitpic" src="fitpics/' + random + '.jpeg" alt="fit pic" height="400">';
+        }
+      });
+      </script>
     </body>
     </html>

@@ -42,6 +42,10 @@
     Stretch the container to fill the entire screen
     */
     /*min-height: 100vh;*/
+    /*
+    Center the content
+    */
+    align-items: center;
 }
 
 .timeC{
@@ -51,4 +55,17 @@
     text-align: center;
     margin: 0;
     padding: 0;
+}
+.timeL{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 650;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.btndiv{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
