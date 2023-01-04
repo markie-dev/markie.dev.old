@@ -51,14 +51,14 @@
       </div>
     </nav>
 
-    <div class="container px-5">
+    <div class="container d-flex justify-content-evenly px-5">
       <div id="TimeSince">
         <br>
         <br>
           <span class="timeC" id="days"> days</span><span class="timeL"> days</span>
           <span class="timeC" id="hours"> Hours</span><span class="timeL"> hours</span>
-          <span class="timeC" id="minutes"> Minutes</span><span class="timeL"> minutes</span>
-          <span class="timeC" id="seconds"> Seconds</span><span class="timeL"> seconds</span>
+          <span class="timeC" id="minutes"> Minutes</span><span class="timeL"> minutes and</span>
+          <span class="timeC" id="seconds"> Seconds</span><span class="timeL"> seconds.</span>
       </div>
     </div>
     <br>
@@ -70,28 +70,40 @@
     </nav>
     <br>
     <br>
-    <div class="btndiv">
+    <div class="btndiv d-flex justify-content-center">
       <button type="button" id="fitbtn" class="btn btn-primary">Generate FIT PIC</button>
     </div>
     <br>
     <br>
-    <div class="container px-5">
-      <img id="fitpic" src="fitpics/1.jpeg" alt="fit pic" height="400">
+    <div class="px-5 imgContainer justify-content-center">
+      <span id="fitpic"></span>
     </div>
     <script>
       // Script to generate random fit pic
       // When the button with the id of fitbtn is clicked, run the function
-      // The function will generate a random number between 1 and 8
       // The function will then change the src of the image with the id of fitpic to the image with the corresponding number
       document.getElementById("fitbtn").addEventListener("click", function() {
-        var random = Math.floor(Math.random() * 9) + 1;
+        //Read the number from the local storage
+        var random = localStorage.getItem("number");
+        //If the number is null, set it to 1
+        if (random == null) {
+          random = 1;
+        }
         //document.getElementById("fitpic").src = "fitpics/" + random + ".jpeg";
         //if number is 7, change to img tag to a video tag with a height of 400
         if (random == 7) {
-          document.getElementById("fitpic").outerHTML = '<video id="fitpic" src="fitpics/7.mov" alt="fit pic" height="400" autoplay loop></video>';
+          document.getElementById("fitpic").outerHTML = '<video id="fitpic" src="fitpics/7.mov" alt="fit pic" height="500" autoplay loop></video>';
         } else {
-          document.getElementById("fitpic").outerHTML = '<img id="fitpic" src="fitpics/' + random + '.jpeg" alt="fit pic" height="400">';
+          //If the number is over 9, set it to 1
+          if (random > 9) {
+            random = 1;
+          }
+          document.getElementById("fitpic").outerHTML = '<img id="fitpic" src="fitpics/' + random + '.jpeg" alt="fit pic" class="img-fluid rounded mx-auto d-block">';
         }
+        //Increase the number by 1
+        random++;
+        //Store the number in the local storage
+        localStorage.setItem("number", random);
       });
       </script>
     </body>

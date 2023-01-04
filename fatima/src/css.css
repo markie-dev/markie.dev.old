@@ -45,7 +45,10 @@
     /*
     Center the content
     */
-    align-items: center;
+}
+.imgContainer {
+    max-height: 50%;
+
 }
 
 .timeC{
@@ -65,7 +68,4 @@
     padding: 0;
 }
 .btndiv{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
 }
