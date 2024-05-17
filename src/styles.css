@@ -19,7 +19,6 @@ html, body {
   .banner {
     background: #E8E8E8;
     padding: 10px 150px;
-    padding-top: 100px;
     position: fixed; /* Fixed at the top */
     top: 1%;
     left: 0;
