@@ -1,0 +1,108 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #E8E8E8;
+    color: #000;
+    font-family: 'Inter';
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  
+  .banner {
+    background: #E8E8E8;
+    padding: 10px 150px;
+    padding-top: 25px;
+    position: fixed; /* Fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .banner-content {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    font-size: 20px;
+    color: #000;
+    margin: 0;
+    margin-right: 20px;
+    font-weight: 1000;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #2e2e2e;
+    margin-left: 35px;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  .nav-link.active {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 22px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-text {
+    z-index: 1000;
+    color: #000000;
+    font-size: 2rem;
+    position: relative;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.hero {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding-top: 175px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.hero-alt {
+    padding-top: 50px;
+    display: block;
+    z-index: 1000;
+    color: #000000;
+    font-size: 19px;
+    position: relative;
+    font-weight: 600;
+}
+
+.hero-icons {
+    padding-top: 35px;
+    display: block;
+    z-index: 1000;
+    color: #000000;
+}
+
+.hero-icons i {
+    font-size: 1.5em; /* Increase the size of the icons */
+    margin-right: 20px; /* Add spacing between the icons */
+}
+
+.hero-filler {
+    z-index: 1000;
+    color: #000000;
+    font-size: 2rem;
+    position: relative;
+    font-weight: 600;
+    line-height: 150%;
+    padding-top: 20px;
+}
+
+.highlight {
+    color: #A14848;
+}
