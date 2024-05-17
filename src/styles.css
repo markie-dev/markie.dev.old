@@ -47,6 +47,10 @@ html, body {
     font-size: 20px;
     transition: color 0.3s;
   }
+
+  .nav-link:hover {
+    color: #A14848; /* Change the color when hovered */
+}
   
   .nav-link.active {
     padding: 5px 10px;
@@ -75,14 +79,23 @@ html, body {
     margin-right: 400px;
 }
 
+a {
+  text-decoration: none;
+}
+
+.hero-icons a {
+  color: inherit; /* Use the same color as the parent element */
+  text-decoration: none; /* Remove the underline */
+}
+
 .hero-alt {
-    padding-top: 50px;
     display: block;
     z-index: 1000;
     color: #000000;
     font-size: 19px;
     position: relative;
     font-weight: 600;
+    margin-top: 50px;
 }
 
 .hero-icons {
@@ -90,6 +103,14 @@ html, body {
     display: block;
     z-index: 1000;
     color: #000000;
+}
+
+.hero-icons a {
+  transition: color 0.3s;
+}
+
+.hero-icons a:hover {
+  color: #A14848; /* Change the color when hovered */
 }
 
 .hero-icons i {
@@ -176,5 +197,9 @@ html, body {
   .hero {
     margin-left: 20px;
     margin-right: 20px;
+    padding-top: 100px;
+  }
+  .hero-text {
+    font-size: 1.8rem;
   }
 }
