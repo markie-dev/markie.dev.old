@@ -61,7 +61,7 @@ html, body {
   
   .nav-link {
     text-decoration: none;
-    color: #2e2e2e;
+    color: #535353;
     margin-left: 35px;
     font-size: 20px;
     transition: color 0.3s;
@@ -80,7 +80,7 @@ html, body {
 }
 
 .hero-text {
-    color: #000000;
+    color: #3d3d3d;
     font-size: 2rem;
     position: relative;
     font-weight: 600;
@@ -108,7 +108,7 @@ a {
 
 .hero-alt {
     display: block;
-    color: #000000;
+    color: #3d3d3d;
     font-size: 19px;
     position: relative;
     font-weight: 600;
