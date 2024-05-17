@@ -13,7 +13,17 @@ html, body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    animation: fadeIn .5s ease-in-out;
   }
+
+  @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+  .hero-icons a {
+    transition: color 0.3s;
+}
 
   
   .banner {
@@ -197,7 +207,7 @@ a {
   .hero {
     margin-left: 20px;
     margin-right: 20px;
-    padding-top: 100px;
+    padding-top: 125px;
   }
   .hero-text {
     font-size: 1.8rem;
