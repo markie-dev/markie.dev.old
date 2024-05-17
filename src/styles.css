@@ -304,4 +304,10 @@ a {
   .hero-text {
     font-size: 1.8rem;
   }
+  .project-text {
+    font-size: 1.2rem;
+  }
+  .project-alt {
+    font-size: .8rem;
+  }
 }
