@@ -47,6 +47,9 @@ html, body {
   position: relative;
   text-align: center;
 }
+.projects-section{
+  padding-top: 150px;
+}
 
 .project-img:hover .centered {
   opacity: 1; /* Change visibility to opacity */
@@ -305,6 +308,10 @@ a {
   .nav-link {
     font-size: 12px;
     margin-left: 15px;
+  }
+
+  .projects-section{
+    padding-top: 100px;
   }
 
   .hero {

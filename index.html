@@ -8,14 +8,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/26ff671cf4.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
     <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
     <div class="banner">
         <div class="banner-content">
-            <a class="logo">marcus ellison<a>
+            <a href="#" class="logo">marcus ellison<a>
             <nav class="navbar">
-                <a href="/" class="nav-link">projects</a>
+                <a href="#projects-section" class="nav-link">projects</a>
                 <a href="about.html" class="nav-link">about</a>
                 <a href="src/resume.pdf" target="_blank" class="nav-link">resume</a>
             </nav>
@@ -31,47 +32,46 @@
             <a href="https://www.linkedin.com/in/marcus-ellison-0974681b9/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         </a>
     </div>
-    <div class="hero">
-        <span class="hero-text"></span>
-    </div>
-    <div class="project-img">
-        <img class="responsive-image" src="img/nightcoreme.png" alt="nightcore.me screenshot">
-        <div class="centered">
-            <div class="centered-text"><strong>A music production tool I created for free.</strong> This website allows for any audio file to be pitched/sped up.</div>
+    <div class="projects-section" id="projects-section"></div>
+        <div class="project-img">
+            <img class="responsive-image" src="img/nightcoreme.png" alt="nightcore.me screenshot">
+            <div class="centered">
+                <div class="centered-text"><strong>A music production tool I created for free.</strong> This website allows for any audio file to be pitched/sped up.</div>
+            </div>
         </div>
-    </div>
-    <div class="project">
-        <span class="project-text">nightcore.me</span>
-        <span class="project-alt">Web  /  Python  /  Figma</span>
-    </div>
-    <div class="project-img">
-        <img class="responsive-image" src="img/desc_race.gif" alt="nightcore.me screenshot">
-        <div class="centered">
-            <div class="centered-text"><strong>A frontend for CVE-2021-30955.</strong> The app adds a user interface as well as support for A15 devices.</div>
+        <div class="project">
+            <span class="project-text">nightcore.me</span>
+            <span class="project-alt">Web  /  Python  /  Figma</span>
         </div>
-    </div>
-    <div class="project">
-        <span class="project-text">desc_race_A15</span>
-        <span class="project-alt">iOS  /  C  /  SwiftUI</span>
-    </div>
-    <div class="project-img">
-        <img class="responsive-image" src="img/keyfinder.png" alt="nightcore.me screenshot">
-        <div class="centered">
-            <div class="centered-text"><strong>A music production tool to find the key of any song.</strong> This program downloads media from a youtube search and does audio analysis to find the key of the song.</div>
+        <div class="project-img">
+            <img class="responsive-image" src="img/desc_race.gif" alt="nightcore.me screenshot">
+            <div class="centered">
+                <div class="centered-text"><strong>A frontend for CVE-2021-30955.</strong> The app adds a user interface as well as support for A15 devices.</div>
+            </div>
         </div>
-    </div>
-    <div class="project">
-        <span class="project-text">keyFinder</span>
-        <span class="project-alt">cli  /  Python</span>
-    </div>
-    <div class="hero">
-        <span class="hero-text"></span>
-    </div>
-    <div class="hero">
-        <span class="hero-text"></span>
-    </div>
-    <div class="hero">
-        <span class="hero-text"></span>
+        <div class="project">
+            <span class="project-text">desc_race_A15</span>
+            <span class="project-alt">iOS  /  C  /  SwiftUI</span>
+        </div>
+        <div class="project-img">
+            <img class="responsive-image" src="img/keyfinder.png" alt="nightcore.me screenshot">
+            <div class="centered">
+                <div class="centered-text"><strong>A music production tool to find the key of any song.</strong> This program downloads media from a youtube search and does audio analysis to find the key of the song.</div>
+            </div>
+        </div>
+        <div class="project">
+            <span class="project-text">keyFinder</span>
+            <span class="project-alt">cli  /  Python</span>
+        </div>
+        <div class="hero">
+            <span class="hero-text"></span>
+        </div>
+        <div class="hero">
+            <span class="hero-text"></span>
+        </div>
+        <div class="hero">
+            <span class="hero-text"></span>
+        </div>
     </div>
 
     <script src="src/main.js"></script>

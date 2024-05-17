@@ -20,3 +20,15 @@ window.addEventListener('scroll', function() {
   }
   lastScrollTop = scrollTop;
 });
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1500, // Speed in milliseconds
+    offset: -50, // Offset in pixels
+  });
+
+  var scroll = new SmoothScroll();
+
+  document.querySelector('.logo').addEventListener('click', function (event) {
+    event.preventDefault();
+    scroll.animateScroll(0);
+  });
