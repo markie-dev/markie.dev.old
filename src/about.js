@@ -24,7 +24,7 @@ window.addEventListener('scroll', function() {
 const apiKey = 'cf0820a2fe8cd6ae023f229bd9d87a66'; // public information key
 const username = 'muckfarcus'; // replace with the username you're interested in
 
-const url = `http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${apiKey}&format=json`;
+const url = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${apiKey}&format=json`;
 const defaultImageUrl = 'https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png'; // replace with the URL of the default picture
 
 fetch(url)
