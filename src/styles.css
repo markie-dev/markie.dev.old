@@ -76,6 +76,27 @@ html, body {
   background-color: rgba(255, 255, 255, 0.788); /* Add a semi-transparent black background */
 }
 
+.hero-content {
+  display: flex;
+  align-items: center;
+}
+
+.hero-image {
+  width: 30%; /* Adjust as needed */
+  min-width: 200px;
+  height: 500px; /* Set an explicit height */
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-bio {
+  width: 50%; /* Adjust as needed */
+  text-align: left;
+  padding-left: 50px; /* Adjust as needed */
+  color: #3d3d3d;
+  font-size: .9rem;
+}
+
 .project-img:hover .centered {
   opacity: 1;
   border-radius: 10px;
@@ -186,9 +207,13 @@ html, body {
     align-items: center;
     text-align: left;
     padding-top: 175px;
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: 500px;
+    margin-right: 500px;
     box-sizing: border-box; /* Add this line */
+}
+
+.emojis{
+  font-size: 1.7rem;
 }
 
 a {
@@ -241,6 +266,18 @@ a {
     color: #A14848;
 }
 
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1500px) { 
+
+  .hero {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+
+}
+
+
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) { 
   .banner {
@@ -258,6 +295,16 @@ a {
     margin-left: 200px;
     margin-right: 200px;
   }
+
+  .hero-bio {
+    font-size: .9rem;
+    padding-left: 25px;
+  }
+
+  .emojis{
+    font-size: 1.5rem;
+  }
+  
 }
 
 /* Medium devices (tablets, less than 992px) */
@@ -277,6 +324,16 @@ a {
     margin-left: 100px;
     margin-right: 100px;
   }
+
+  .hero-bio {
+    font-size: .8rem;
+    padding-left: 25px;
+  }
+
+  .emojis{
+    font-size: 1.4rem;
+  }
+
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -295,6 +352,10 @@ a {
   .hero {
     margin-left: 50px;
     margin-right: 50px;
+  }
+
+  .emojis{
+    font-size: 1.3rem;
   }
 }
 
@@ -328,5 +389,18 @@ a {
   }
   .project-alt {
     font-size: .8rem;
+  }
+  .hero-bio {
+    font-size: .8rem;
+    width:100%;
+    padding-right:25px;
+    padding-top:5%;
+  }
+  .hero-image {
+    width:100%; /* Set an explicit height */
+  }
+  
+  .hero-content {
+    flex-direction: column;
   }
 }
