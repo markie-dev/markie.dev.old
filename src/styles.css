@@ -268,7 +268,7 @@ a {
 
 
 /* Large devices (desktops, less than 1200px) */
-@media (max-width: 1500px) { 
+@media (max-width: 1580px) { 
 
   .hero {
     margin-left: 300px;
@@ -321,12 +321,12 @@ a {
   }
 
   .hero {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 75px;
+    margin-right: 75px;
   }
 
   .hero-bio {
-    font-size: .8rem;
+    font-size: .9rem;
     padding-left: 25px;
   }
 
@@ -350,8 +350,15 @@ a {
   }
 
   .hero {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .hero-bio {
+    font-size: .9rem;
+    width:100%;
+    padding-right:25px;
+    padding-top:5%;
   }
 
   .emojis{
@@ -391,7 +398,7 @@ a {
     font-size: .8rem;
   }
   .hero-bio {
-    font-size: .8rem;
+    font-size: .9rem;
     width:100%;
     padding-right:25px;
     padding-top:5%;
