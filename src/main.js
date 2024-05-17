@@ -1,4 +1,5 @@
 let lastScrollTop = 0;
+let isScrolling;
 const banner = document.querySelector('.banner');
 const threshold = 50;
 
@@ -11,7 +12,10 @@ window.addEventListener('scroll', function() {
     banner.classList.add('hide');
   } else {
     if (scrollTop + clientHeight < scrollHeight) {
-      banner.classList.remove('hide');
+      window.clearTimeout(isScrolling);
+      isScrolling = setTimeout(function() {
+        banner.classList.remove('hide');
+      }, 10);
     }
   }
   lastScrollTop = scrollTop;
