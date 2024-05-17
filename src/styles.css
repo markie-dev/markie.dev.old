@@ -4,19 +4,24 @@ html, body {
     padding: 0;
     background-color: #E8E8E8;
     color: #000;
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
     font-weight: normal;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
   }
+
   
   .banner {
     background: #E8E8E8;
     padding: 10px 150px;
-    padding-top: 25px;
+    padding-top: 100px;
     position: fixed; /* Fixed at the top */
-    top: 0;
+    top: 1%;
     left: 0;
     width: 100%;
     z-index: 100;
@@ -33,7 +38,7 @@ html, body {
     color: #000;
     margin: 0;
     margin-right: 20px;
-    font-weight: 1000;
+    font-weight: 600;
   }
   
   .nav-link {
@@ -105,4 +110,72 @@ html, body {
 
 .highlight {
     color: #A14848;
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+  .banner {
+    padding: 10px 100px;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    margin-left: 30px;
+  }
+
+  .hero {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+  .banner {
+    padding: 10px 50px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+    margin-left: 25px;
+  }
+
+  .hero {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+  .banner {
+    padding: 10px 20px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+
+  .hero {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) { 
+  .banner {
+    padding: 10px 10px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+    margin-left: 15px;
+  }
+
+  .hero {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
