@@ -65,8 +65,13 @@ html, body {
   justify-content: center; /* Add this line */
   align-items: center; /* Add this line */
   transition: opacity 0.2s ease-in-out;
-  border-radius: 15px; /* Add this line */
+  border-radius: 10px; /* Add this line */
   background-color: rgba(255, 255, 255, 0.788); /* Add a semi-transparent black background */
+}
+
+.project-img:hover .centered {
+  opacity: 1;
+  transform: translate(-50%, -50%); /* Combine the translate and scale transforms */
 }
 
 .centered-text {
@@ -101,6 +106,7 @@ html, body {
 }
 .project {
   display: flex;
+  margin-bottom: 10%;
   align-items: center; /* Vertically align the children in the center */
 }
 
