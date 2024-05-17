@@ -28,7 +28,7 @@ html, body {
   }
   .responsive-image {
     background: #000;
-    width: 90%; /* Make the image as wide as the parent div */
+    width: 100%; /* Make the image as wide as the parent div */
     height: auto; /* Keep the aspect ratio */
     margin: auto; /* Center the image */
     margin-bottom: 25px;
@@ -62,7 +62,7 @@ html, body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 90%; /* Add this line */
+  width: 100%; /* Add this line */
   height: 100%; /* Add this line */
   transform: translate(-50%, -50%);
   font-size: 2rem;
@@ -107,7 +107,6 @@ html, body {
   font-size: 25px;
   position: relative;
   font-weight: 700;
-  margin-left: 5%;
 }
 .project-alt {
   color: #535353;
