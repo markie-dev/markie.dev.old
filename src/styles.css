@@ -15,10 +15,6 @@ html, body {
     text-rendering: optimizeLegibility;
   }
 
-  body * {
-    border: 1px solid red;
-  }
-
   @keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
