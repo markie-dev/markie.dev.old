@@ -15,7 +15,7 @@ window.addEventListener('scroll', function() {
       window.clearTimeout(isScrolling);
       isScrolling = setTimeout(function() {
         banner.classList.remove('hide');
-      }, 10);
+      }, 5);
     }
   }
   lastScrollTop = scrollTop;

@@ -22,10 +22,88 @@ html, body {
 }
 
   .hero-icons a {
-    transition: color 0.3s;
+      transition: color 0.3s;
+  }
+  .responsive-image {
+    background: #000;
+    width: 90%; /* Make the image as wide as the parent div */
+    height: auto; /* Keep the aspect ratio */
+    margin: auto; /* Center the image */
+    margin-bottom: 25px;
+    display: block; /* Make the image a block element so it can be centered */
+    border-radius: 10px; /* Add a corner radius to the image */
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+    transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+    position: relative; /* Add this line */
 }
 
-  
+.responsive-image:hover {
+  transform: scale(.97); /* Add this line */
+  filter: blur(5px); /* Add this line */
+}
+
+.project-img {
+  position: relative;
+  text-align: center;
+}
+
+.project-img:hover .centered {
+  opacity: 1; /* Change visibility to opacity */
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%; /* Add this line */
+  height: 100%; /* Add this line */
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  text-align: center;
+  opacity: 0;
+  display: flex; /* Add this line */
+  justify-content: center; /* Add this line */
+  align-items: center; /* Add this line */
+  transition: opacity 0.2s ease-in-out;
+  border-radius: 15px; /* Add this line */
+  background-color: rgba(255, 255, 255, 0.788); /* Add a semi-transparent black background */
+}
+
+.centered-text {
+  color: #3d3d3d;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 50px;
+  border-radius: 5px;
+}
+
+
+.project-img:hover .responsive-image {
+  transform: scale(.97);
+  filter: blur(5px);
+}
+
+.project-img:hover .centered {
+  visibility: visible;
+}
+
+.project-text {
+  color: #3d3d3d;
+  font-size: 25px;
+  position: relative;
+  font-weight: 700;
+  margin-left: 5%;
+}
+.project-alt {
+  color: #535353;
+  position: relative;
+  margin-left: 5%;
+}
+.project {
+  display: flex;
+  align-items: center; /* Vertically align the children in the center */
+}
+
   .banner {
     background: rgba(232, 232, 232, 0.7); /* Make the background semi-transparent */
     backdrop-filter: blur(10px); /* Blur the content behind the banner */
@@ -95,6 +173,7 @@ html, body {
     padding-top: 175px;
     margin-left: 400px;
     margin-right: 400px;
+    box-sizing: border-box; /* Add this line */
 }
 
 a {
