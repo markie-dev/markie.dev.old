@@ -62,8 +62,8 @@ html, body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%; /* Add this line */
-  height: 100%; /* Add this line */
+  width: 98%; /* Add this line */
+  height: 99%; /* Add this line */
   transform: translate(-50%, -50%);
   font-size: 2rem;
   text-align: center;
