@@ -326,7 +326,6 @@ a {
   filter: blur(50px);
   transform: scale(3);
   z-index: -1;
-  background-color: #A14848; /* default color */
 }
 
 #toast-listening {
