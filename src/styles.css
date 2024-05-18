@@ -573,6 +573,10 @@ color: #A14848; /* Change the color when hovered */
     font-size: .9rem;
   }
 
+  .centered-text {
+    font-size: 1rem;
+  }
+
   .seperator{
     margin-top: 50px;
   }
