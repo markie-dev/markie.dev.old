@@ -374,6 +374,7 @@ a {
 .seperator{
   border-top: 3px solid rgb(175, 175, 175);
   border-radius: 5px;
+  margin-top: 100px;
 }
 
 .footer {
@@ -570,5 +571,9 @@ color: #A14848; /* Change the color when hovered */
   }
   .footer-right a {
     font-size: .9rem;
+  }
+
+  .seperator{
+    margin-top: 50px;
   }
 }
