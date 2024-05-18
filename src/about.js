@@ -43,7 +43,7 @@ fetch(url)
 
     if (mostRecentTrack.image[3]['#text'] && mostRecentTrack.image[3]['#text'] !== defaultImageUrl) {
       toastBackground.style.backgroundImage = `url(${mostRecentTrack.image[3]['#text']})`;
-      toastImage.src = mostRecentTrack.image[3]['#text']; // use the largest image
+      toastImage.src = mostRecentTrack.image[2]['#text'];
     } else {
       toastBackground.style.backgroundColor = '#A14848';
       toastImage.src = defaultImageUrl; // use the default image
