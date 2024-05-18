@@ -130,6 +130,7 @@ html, body {
   font-size: 25px;
   position: relative;
   font-weight: 700;
+  margin-top: -5px;
 }
 .project-alt {
   color: #535353;
@@ -138,8 +139,18 @@ html, body {
 }
 .project {
   display: flex;
-  margin-bottom: 10%;
-  align-items: center; /* Vertically align the children in the center */
+  margin-bottom: 9%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project .project-alt:nth-child(3) {
+  margin-left: auto;
+  margin-top: -5px;
+}
+
+.project .project-alt:last-child a:first-child {
+  padding-left: 10px; /* Adjust as needed */
 }
 
   .banner {
@@ -241,6 +252,12 @@ a {
     padding-top: 35px;
     display: block;
     color: #000000;
+}
+
+.project-alt a {
+  color: black;
+  font-size: 1.5em;
+  float: right;
 }
 
 .hero-icons a {
@@ -347,9 +364,56 @@ a {
   opacity: 1;
 }
 
+.seperator{
+  border-top: 3px solid rgb(175, 175, 175);
+  border-radius: 5px;
+}
+
+.footer {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  align-items: center;
+  color:#000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-right {
+  display: block;
+  color: #000000;
+}
+
+.footer-right a {
+transition: color 0.3s;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer-right a {
+  color: inherit; /* Use the same color as the parent element */
+  text-decoration: none; /* Remove the underline */
+}
+
+.footer-right a:hover {
+color: #A14848; /* Change the color when hovered */
+}
+
+.footer-right i {
+  font-size: 1.5em; /* Increase the size of the icons */
+  margin-right: 20px; /* Add spacing between the icons */
+}
+
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1700px) { 
+
+  #toast {
+    display: none;
+  }
 
   .hero {
     margin-left: 300px;
@@ -447,12 +511,6 @@ a {
   }
 }
 
-@media (max-width: 600px) {
-  #toast {
-    display: none;
-  }
-}
-
 /* Extra small devices (phones, less than 576px) */
 @media (max-width: 575.98px) { 
   .banner {
@@ -484,6 +542,7 @@ a {
   .project-alt {
     font-size: .8rem;
   }
+
   .hero-bio {
     font-size: .9rem;
     width:100%;
@@ -496,5 +555,12 @@ a {
   
   .hero-content {
     flex-direction: column;
+  }
+
+  .footer-left a {
+    font-size: .9rem;
+  }
+  .footer-right a {
+    font-size: .9rem;
   }
 }
