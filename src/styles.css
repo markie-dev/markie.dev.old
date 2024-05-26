@@ -30,19 +30,19 @@ html, body {
   }
   .responsive-image {
     background: #000;
-    width: 100%; /* Make the image as wide as the parent div */
-    height: auto; /* Keep the aspect ratio */
-    margin: auto; /* Center the image */
+    width: 100%;
+    height: auto;
+    margin: auto;
     margin-bottom: 25px;
-    display: block; /* Make the image a block element so it can be centered */
-    border-radius: 10px; /* Add a corner radius to the image */
+    display: block;
+    border-radius: 10px;
     transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
-    position: relative; /* Add this line */
+    position: relative;
 }
 
 .responsive-image:hover {
-  transform: scale(.97); /* Add this line */
-  filter: blur(5px); /* Add this line */
+  transform: scale(.97);
+  filter: blur(5px);
   border-radius: 10px;
 }
 
@@ -55,7 +55,7 @@ html, body {
 }
 
 .project-img:hover .centered {
-  opacity: 1; /* Change visibility to opacity */
+  opacity: 1;
   border-radius: 10px;
 }
 
@@ -63,17 +63,17 @@ html, body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 98%; /* Add this line */
-  height: 99%; /* Add this line */
+  width: 98%;
+  height: 99%;
   transform: translate(-50%, -50%);
   font-size: 2rem;
   text-align: center;
   opacity: 0;
-  display: flex; /* Add this line */
-  justify-content: center; /* Add this line */
-  align-items: center; /* Add this line */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: opacity 0.2s ease-in-out;
-  border-radius: 10px; /* Add this line */
+  border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.788); /* Add a semi-transparent black background */
 }
 
@@ -83,17 +83,17 @@ html, body {
 }
 
 .hero-image {
-  width: 30%; /* Adjust as needed */
+  width: 30%;
   min-width: 200px;
-  height: 600px; /* Set an explicit height */
+  height: 600px;
   background-size: cover;
   background-position: center;
 }
 
 .hero-bio {
-  width: 50%; /* Adjust as needed */
+  width: 50%;
   text-align: left;
-  padding-left: 50px; /* Adjust as needed */
+  padding-left: 50px;
   color: #3d3d3d;
   font-size: 1rem;
 }
@@ -101,7 +101,7 @@ html, body {
 .project-img:hover .centered {
   opacity: 1;
   border-radius: 10px;
-  transform: translate(-50%, -50%); /* Combine the translate and scale transforms */
+  transform: translate(-50%, -50%);
 }
 
 .centered-text {
@@ -149,17 +149,17 @@ html, body {
 }
 
 .project .project-alt:last-child a:first-child {
-  padding-left: 10px; /* Adjust as needed */
+  padding-left: 10px;
 }
 
   .banner {
-    background: rgba(232, 232, 232, 0.7); /* Make the background semi-transparent */
-    backdrop-filter: blur(10px); /* Blur the content behind the banner */
+    background: rgba(232, 232, 232, 0.7);
+    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     padding-left: 150px;
     padding-top: 25px;
     padding-bottom: 25px;
-    position: fixed; /* Fixed at the top */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -168,7 +168,7 @@ html, body {
   }
   
   .banner.hide {
-    top: -100px; /* Adjust this value to match the height of your banner */
+    top: -100px;
   }
 
   .banner-content {
@@ -194,7 +194,7 @@ html, body {
   }
 
   .nav-link:hover {
-    color: #A14848; /* Change the color when hovered */
+    color: #A14848;
 }
   
   .nav-link.active {
@@ -221,12 +221,12 @@ html, body {
     padding-top: 175px;
     margin-left: 500px;
     margin-right: 500px;
-    box-sizing: border-box; /* Add this line */
+    box-sizing: border-box;
 }
 
 .emojis{
   font-size: 1.7rem;
-  letter-spacing: 10px; /* Add this line */
+  letter-spacing: 10px;
 }
 
 a {
@@ -234,8 +234,8 @@ a {
 }
 
 .hero-icons a {
-  color: inherit; /* Use the same color as the parent element */
-  text-decoration: none; /* Remove the underline */
+  color: inherit;
+  text-decoration: none;
 }
 
 .hero-alt {
@@ -268,16 +268,16 @@ a {
 }
 
 .project-alt a:hover {
-  color: #A14848; /* Change the color when hovered */
+  color: #A14848;
 }
 
 .hero-icons a:hover {
-  color: #A14848; /* Change the color when hovered */
+  color: #A14848;
 }
 
 .hero-icons i {
-    font-size: 1.5em; /* Increase the size of the icons */
-    margin-right: 20px; /* Add spacing between the icons */
+    font-size: 1.5em;
+    margin-right: 20px;
 }
 
 .hero-filler {
@@ -330,8 +330,8 @@ a {
 
 #toast-listening {
   position: absolute;
-  top: -15px; /* adjust this value as needed */
-  left: 5px; /* adjust this value as needed */
+  top: -15px;
+  left: 5px;
   color:rgb(255, 255, 255);;
   padding: 5px;
 }
@@ -345,13 +345,13 @@ a {
 
 #toast-date {
   position: absolute;
-  font-size: .9rem;
+  font-size: .8rem;
   right: 10px;
-  bottom: 10px;
+  bottom: 11px;
 }
 
 #toast-info p:first-child {
-  margin-bottom: 10px; /* adjust this value as needed */
+  margin-bottom: 10px;
 }
 #toast-info p:not(:first-child) {
   color: rgb(228, 228, 228);
@@ -367,10 +367,10 @@ a {
 
 #toast-info p:first-child {
   display: flex;
-  animation: scroll 6s linear infinite; /* 3s for scroll + 3s for delay */
-  animation-delay: 3s; /* Add this line */
+  animation: scroll 6s linear infinite;
+  animation-delay: 3s;
   white-space: nowrap;
-  margin-bottom: 7px; /* adjust this value as needed */
+  margin-bottom: 7px;
 }
 
 #toast-info p:first-child::before,
@@ -419,21 +419,21 @@ a {
 }
 
 .footer-right a {
-  color: inherit; /* Use the same color as the parent element */
-  text-decoration: none; /* Remove the underline */
+  color: inherit;
+  text-decoration: none;
 }
 
 .footer-right a:hover {
-color: #A14848; /* Change the color when hovered */
+color: #A14848;
 }
 
 .footer-right i {
-  font-size: 1.5em; /* Increase the size of the icons */
-  margin-right: 20px; /* Add spacing between the icons */
+  font-size: 1.5em;
+  margin-right: 20px;
 }
 
 
-/* Large devices (desktops, less than 1200px) */
+/* X-Large devices*/
 @media (max-width: 1700px) { 
 
   .hero {
@@ -444,7 +444,7 @@ color: #A14848; /* Change the color when hovered */
 }
 
 
-/* Large devices (desktops, less than 1200px) */
+/* Large devices*/
 @media (max-width: 1299.98px) { 
 
   #toast {
@@ -478,7 +478,7 @@ color: #A14848; /* Change the color when hovered */
   
 }
 
-/* Medium devices (tablets, less than 992px) */
+/* Medium devices*/
 @media (max-width: 991.98px) { 
   .banner {
     padding-left: 50px;
@@ -507,7 +507,7 @@ color: #A14848; /* Change the color when hovered */
 
 }
 
-/* Small devices (landscape phones, less than 768px) */
+/* Small devices*/
 @media (max-width: 767.98px) { 
   .banner {
     padding-left: 20px;
@@ -537,7 +537,7 @@ color: #A14848; /* Change the color when hovered */
   }
 }
 
-/* Extra small devices (phones, less than 576px) */
+/* Extra small devices*/
 @media (max-width: 575.98px) { 
   .banner {
     padding-left: 10px;
@@ -576,7 +576,7 @@ color: #A14848; /* Change the color when hovered */
     padding-top:5%;
   }
   .hero-image {
-    width:100%; /* Set an explicit height */
+    width:100%;
   }
   
   .hero-content {

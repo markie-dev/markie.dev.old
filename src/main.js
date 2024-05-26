@@ -22,8 +22,8 @@ window.addEventListener('scroll', function() {
 });
 
 var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 1500, // Speed in milliseconds
-    offset: -50, // Offset in pixels
+    speed: 1500,
+    offset: -50,
   });
 
   var scroll = new SmoothScroll();

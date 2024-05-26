@@ -22,10 +22,10 @@ window.addEventListener('scroll', function() {
 });
 
 const apiKey = 'cf0820a2fe8cd6ae023f229bd9d87a66'; // public information key
-const username = 'muckfarcus'; // replace with the username you're interested in
+const username = 'muckfarcus';
 
 const url = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${apiKey}&format=json`;
-const defaultImageUrl = 'https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png'; // replace with the URL of the default picture
+const defaultImageUrl = 'https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png';
 
 fetch(url)
   .then(response => response.json())
@@ -46,25 +46,30 @@ fetch(url)
       toastImage.src = mostRecentTrack.image[2]['#text'];
     } else {
       toastBackground.style.backgroundColor = '#A14848';
-      toastImage.src = defaultImageUrl; // use the default image
+      toastImage.src = defaultImageUrl;
+    }
+
+    const maxLength = 18;
+    if (mostRecentTrack.artist['#text'].length > maxLength) {
+      toastArtist.textContent = `${mostRecentTrack.artist['#text'].substring(0, maxLength)}...`;
+      console.log('Artist name is too long');
+    } else {
+      toastArtist.textContent = `${mostRecentTrack.artist['#text']}`;
     }
 
     toastSong.textContent = `${mostRecentTrack.name}`;
 
     if (toastSong.scrollWidth > toastSong.parentNode.offsetWidth) {
-      toastSong.dataset.text = `${mostRecentTrack.name}`; // Set the data-text attribute
-    
-      // Calculate the width after the data-text attribute is updated
+      toastSong.dataset.text = `${mostRecentTrack.name}`;
+  
       var width = toastSong.scrollWidth;
     
       var translateXValue = width / toastSong.parentNode.offsetWidth * 40.1;
     
-      // Create a new stylesheet
       var styleElement = document.createElement('style');
       document.head.appendChild(styleElement);
       var styleSheet = styleElement.sheet;
     
-      // Set the animation rule
       styleSheet.insertRule(`
         @keyframes scroll {
           0% {
@@ -75,18 +80,14 @@ fetch(url)
           }
         }
       `, styleSheet.cssRules.length);
-    
-      // Apply the animation to the song title
+
       toastSong.style.animation = `scroll ${width * 0.01}s linear infinite`;
       toastSong.style.animationDelay = `3s`;
     } else {
-      // If the song title is shorter than its parent, remove any existing animation and data-text attribute
       toastSong.style.marginLeft = '-50px';
       toastSong.style.animation = '';
       toastSong.dataset.text = '';
     }
-
-    toastArtist.textContent = `${mostRecentTrack.artist['#text']}`;
 
     const dateListened = mostRecentTrack.date ? mostRecentTrack.date['#text'] : null;
 
