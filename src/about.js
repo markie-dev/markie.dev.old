@@ -50,6 +50,42 @@ fetch(url)
     }
 
     toastSong.textContent = `${mostRecentTrack.name}`;
+
+    if (toastSong.scrollWidth > toastSong.parentNode.offsetWidth) {
+      toastSong.dataset.text = `${mostRecentTrack.name}`; // Set the data-text attribute
+    
+      // Calculate the width after the data-text attribute is updated
+      var width = toastSong.scrollWidth;
+    
+      var translateXValue = width / toastSong.parentNode.offsetWidth * 40.1;
+    
+      // Create a new stylesheet
+      var styleElement = document.createElement('style');
+      document.head.appendChild(styleElement);
+      var styleSheet = styleElement.sheet;
+    
+      // Set the animation rule
+      styleSheet.insertRule(`
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          50%, 100% {
+            transform: translateX(-${translateXValue}%);
+          }
+        }
+      `, styleSheet.cssRules.length);
+    
+      // Apply the animation to the song title
+      toastSong.style.animation = `scroll ${width * 0.01}s linear infinite`;
+      toastSong.style.animationDelay = `3s`;
+    } else {
+      // If the song title is shorter than its parent, remove any existing animation and data-text attribute
+      toastSong.style.marginLeft = '-50px';
+      toastSong.style.animation = '';
+      toastSong.dataset.text = '';
+    }
+
     toastArtist.textContent = `${mostRecentTrack.artist['#text']}`;
 
     const dateListened = mostRecentTrack.date ? mostRecentTrack.date['#text'] : null;

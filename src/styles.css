@@ -331,7 +331,7 @@ a {
 #toast-listening {
   position: absolute;
   top: -15px; /* adjust this value as needed */
-  left: 1px; /* adjust this value as needed */
+  left: 5px; /* adjust this value as needed */
   color:rgb(255, 255, 255);;
   padding: 5px;
 }
@@ -345,6 +345,7 @@ a {
 
 #toast-date {
   position: absolute;
+  font-size: .9rem;
   right: 10px;
   bottom: 10px;
 }
@@ -360,6 +361,22 @@ a {
   display: flex;
   flex-direction: column;
   line-height: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#toast-info p:first-child {
+  display: flex;
+  animation: scroll 6s linear infinite; /* 3s for scroll + 3s for delay */
+  animation-delay: 3s; /* Add this line */
+  white-space: nowrap;
+  margin-bottom: 7px; /* adjust this value as needed */
+}
+
+#toast-info p:first-child::before,
+#toast-info p:first-child::after {
+  content: attr(data-text);
+  padding-right: 50px;
 }
 
 .toast-hidden {
