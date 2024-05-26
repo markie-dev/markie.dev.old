@@ -74,7 +74,7 @@ html, body {
   align-items: center;
   transition: opacity 0.2s ease-in-out;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.788); /* Add a semi-transparent black background */
+  background-color: rgba(255, 255, 255, 0.788);
 }
 
 .hero-content {
